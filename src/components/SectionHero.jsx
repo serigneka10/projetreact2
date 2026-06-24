@@ -1,10 +1,11 @@
-import { BatteryCharging, BotMessageSquare, Fingerprint, GlobeLock, PlugZap, ShieldHalf } from "lucide-react";
+import { GlobeLock } from "lucide-react";
+
 
 
 function SectionHero() {
   return (
     <div>
-      <div className="flex flex-col justify-center items-center mt-36 lg-mt-20">
+      <div className="flex flex-col mt-32 justify-center items-center md:mt-32">
        
         <h1 className="text-3xl md:text-5xl lg:text-6xl tracking-wide text-center">VirtualR build tools 
         <span className="bg-gradient-to-r from-orange-800 to-red-800 bg-clip-text text-transparent"> for <br /> developers</span>  
@@ -44,12 +45,7 @@ function SectionHero() {
   </video>
 
 </div>
- 
-<PlugZap  className="text-orange-800" />
-< ShieldHalf  className="text-orange-800" />
-<Fingerprint  className="text-orange-800" />
-<BatteryCharging  className="text-orange-800" />
-<BotMessageSquare  className="text-orange-800" />
+
     </div>
   );
 }

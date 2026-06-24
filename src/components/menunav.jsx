@@ -1,4 +1,4 @@
-import { Link } from "lucide-react";
+
 import { useState } from "react";
 
 function Navbar() {
@@ -7,10 +7,8 @@ function Navbar() {
   return (
     <>
       <nav
-        className="bg-black shadow-lg"
-
-      >
-        <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
+        className="bg-black shadow-lg">
+        <div className="max-w-6xl fixed w-full top-0 md:ml-12  mx-auto flex items-center justify-between p-4">
 
           {/* Logo */}
           <div className="flex items-center gap-2">
@@ -28,12 +26,12 @@ function Navbar() {
             </ul>
 
             <div className="flex gap-3">
-              <Link to="/login">
-                <button
-                  className="px-4 py-1 border rounded-md cursor-pointer">
-                  Sign up
-                </button>
-              </Link>
+
+              <button
+                className="px-4 py-1 border rounded-md cursor-pointer">
+                Sign up
+              </button>
+
               <button className="px-4 py-1 bg-gradient-to-r from-orange-500 to-orange-800 rounded-md">
                 Create an account
               </button>
@@ -50,15 +48,15 @@ function Navbar() {
       </nav>
 
       {kaOpen && (
-        <div className="md:hidden bg-zinc-600 p-4 rounded-lg ">
-          <ul className="flex flex-col justify-center items-enter ml-32 gap-4">
+        <div className="md:hidden bg-neutral-800 p-4 rounded-lg mt-16">
+          <ul className="flex flex-col justify-center items-center  gap-4">
             <li><a href="#">Accueil</a></li>
             <li><a href="#apropos">À propos</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
 
-          <div className="flex flex-col gap-3 mt-4">
+          <div className="flex flex-col items-center gap-3 mt-4">
             <a
               href="/signup"
               className="px-4 py-2 border rounded-md inline-block cursor-pointer"

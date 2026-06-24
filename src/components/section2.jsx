@@ -85,11 +85,7 @@ function PageSection2() {
                     </div>
 
                 </div>
-            </div>
-
-
-
-            
+            </div>  
         </div>
     )
 }

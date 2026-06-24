@@ -6,7 +6,7 @@ function PageFooter() {
 
             <div className=" border-t py-1 border-neutral-800"></div>
 
-            <div className="w-full grid grid-cols-2 p-4 justify-center items-start gap-18 ">
+            <div className="w-full grid grid-cols-3 p-4 justify-center items-start gap-18 ">
 
                 <div className="flex flex-col mt-4 space-y-3">
                     <p className="text-md font-semibold ">Resources</p>
